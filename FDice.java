@@ -2,6 +2,7 @@ public class FDice
 {
 	public static void main(String[] args) 
 	{
+	// creating new dice for the competition
 		Dice player1 = new Dice();
 		Dice player2 = new Dice();
 		Dice player3 = new Dice();
@@ -13,6 +14,7 @@ public class FDice
 		Dice comp4 = new Dice();
 		Dice comp5 = new Dice();
 
+	//get the values of the dice for each player
 		int player1Value = player1.getValue();
 		int player2Value = player2.getValue();
 		int player3Value = player3.getValue();
@@ -23,9 +25,12 @@ public class FDice
 		int comp3Value = comp3.getValue();
 		int comp4Value = comp4.getValue();
 		int comp5Value = comp5.getValue();
+
+	//make variables to hold the sum of each players dice
 		int pTotal = player1Value + player2Value + player3Value + player4Value + player5Value;
 		int cTotal = comp1Value + comp2Value + comp3Value + comp4Value + comp5Value;
 
+	//output each dice roll for each competitor
 		System.out.println("");
 		System.out.println("Your dice rolls were: \n ");
 		System.out.println("--> " + player1Value + "\n");
@@ -44,6 +49,8 @@ public class FDice
 		System.out.println("");
 
 		System.out.println("Your dice rolled to be " + (pTotal) + ".\nThe opponent's dice rolled to be " + (cTotal) + "\n");
+
+		//If statement to output the victor in this dice matchup
 
 		if (pTotal > cTotal)
 		{
