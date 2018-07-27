@@ -50,17 +50,16 @@ public class FDice
 
 		System.out.println("Your dice rolled to be " + (pTotal) + ".\nThe opponent's dice rolled to be " + (cTotal) + "\n");
 
-		//If statement to output the victor in this dice matchup
+		//If else statement to output the victor in this dice matchup
 
 		if (pTotal > cTotal)
-		{
 			System.out.println("Congratulations you won!");
-		} 
+	    
 		else if (cTotal > pTotal) 
-		{
 			System.out.println("Unfortunately the computer won this round, better luck next time.");
-		} else {
+	    
+	    else   
 			System.out.println("It's a draw, run again for another chance to beat the computer!");
-		}
+	   
 	}
 }
